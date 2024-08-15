@@ -1,16 +1,18 @@
-import BookingPage from "./BookingPage";
-import HomePage from './HomePage.js';
-import { Routes, Route } from "react-router-dom";
+import BookingPage from "./BookingPage.js";
+import Homepage from "./Homepage.js";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function Main(){
-    return(
-        <main>
-            <Routes> 
-                <Route path="/" element={<HomePage />}></Route>
-                <Route path="/booking" element={<BookingPage />}></Route>
-            </Routes>
-        </main>
-    );
+function Main() {
+  return (
+    <main>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/booking" element={<BookingPage />} />
+        </Routes>
+      </Router>
+    </main>
+  );
 }
 
 export default Main;

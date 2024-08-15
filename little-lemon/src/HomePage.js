@@ -1,11 +1,11 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Highlights from "./Highlights";
+import Header from "./Header.js";
+import Footer from "./Footer.js";
+import Hero from "./Hero.js";
+import Highlights from "./Highlights.js";
 import Nav from './Nav.js';
 import Testimonials from './Testimonials.js';
 
-function HomePage(){
+function Homepage(){
     return(
         <>
         <Header></Header>
@@ -18,4 +18,4 @@ function HomePage(){
     )
 }
 
-export default HomePage
+export default Homepage;

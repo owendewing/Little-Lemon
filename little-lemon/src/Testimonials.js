@@ -1,7 +1,7 @@
 function Testimonials(){
     return(
-        <div class="testimonials-background">
-            <div class="testimonials-content">
+        <div className="testimonials-background">
+            <div className="testimonials-content">
                 <h2 id="testimonials-title">Testimonials</h2>
             </div>
         </div>

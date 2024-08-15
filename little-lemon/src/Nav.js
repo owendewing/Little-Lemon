@@ -1,17 +1,19 @@
+import { Link } from 'react-router-dom';
+
 function Nav() {
-    return(
-        <nav class = "navbar">
-            <img src={require("./little-lemon-logo.png")} alt="Little Lemon logo" id="logo"/>
-            <ul class="list">
-                <li a href="">Home</li>
-                <li a href="">About</li>
-                <li a href="">Menu</li>
-                <li a href="">Reservations</li>
-                <li a href="">Order Online</li>
-                <li a href="">Login</li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className="navbar">
+      <img src={require("./little-lemon-logo.png")} alt="Little Lemon logo" id="logo" />
+      <ul className="list">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/reservations">Reservations</Link></li>
+        <li><Link to="/order">Order Online</Link></li>
+        <li><Link to="/login">Login</Link></li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Nav;
