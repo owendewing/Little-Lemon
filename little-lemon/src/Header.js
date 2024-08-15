@@ -1,5 +1,8 @@
-return (
-    <header>
-        <img ahref="logo.svg"></img>
-    </header>
-)
+function Header(){
+    return (
+        <header>
+        </header>
+    );
+}
+
+export default Header;

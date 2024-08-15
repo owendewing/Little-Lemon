@@ -28,6 +28,167 @@
   color: #61dafb;
 }
 
+.navbar{
+  margin-top:15px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  /* padding: 30px; */
+}
+
+#logo{
+  display:flex;
+  width: 170px;
+  height: 50px;
+}
+
+.list{
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  margin-top: 13px;
+  display:flex;
+  list-style-type: none;
+  font-style: bold;
+  gap:20px;
+}
+
+.hero-background{
+  background-color: #495E57;
+  height:300px;
+}
+
+.hero-content{
+  margin-left: 280px;
+  padding: 15px;
+}
+
+#hero-title{
+  color: #F4CE14;
+}
+
+#hero-location{
+  color: #FFFFFF;
+  margin-top:-30px;
+  font-weight: bold;
+}
+
+#hero-description{
+  color: #FFFFFF;
+  font-style: 'Karla', serif;
+  font-weight: bold;
+  margin-top: -35px;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+h1{
+  font-family: 'Markazi', serif;
+}
+
+h2{
+  font-family: 'Markazi', serif;
+}
+
+.buttons{
+  background-color:#F4CE14;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 12px;
+  font-style: 'Karla', serif;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.highlights-background{
+  height:550px;
+}
+
+.highlights-content{
+  display: flex;
+  justify-content: center;
+  gap: 380px;
+}
+
+.column-image{
+  display:inline;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 150px;
+  height: 150px;
+  /* padding: 10px; */
+}
+
+.highlights-specials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.highlights-column {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #EDEFEE;
+  margin-top: 50px;
+  flex: 1;
+  max-width: 250px;
+  text-align: center;
+}
+
+.column-image {
+  width: 100%;
+}
+
+.hightlights-title {
+  font-family: 'Markazi', sans-serif;
+}
+
+.highlights-text {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.highlights-price {
+  font-weight: bold;
+  color: #EE9972;
+  font-size: 15px;
+}
+
+.highlights-text-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.highlights-description {
+  font-family: 'Karla', sans-serif;
+  color: #495E57;
+  margin: 10px 0;
+}
+
+.delivery-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.testimonials-background{
+  height:500px;
+  background-color: #D9D9D9;
+}
+
+#testimonials-title{
+  font-weight:400;
+  color: #333333;
+  justify-content: center;
+  display: flex;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
