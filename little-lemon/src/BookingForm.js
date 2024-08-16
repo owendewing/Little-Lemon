@@ -7,13 +7,8 @@ function BookingForm(props) {
         const selectedDate = e.target.value;
         props.dispatch({type: "UPDATE_TIMES", date: selectedDate});
     }
-    // const [date, setDate] = useState("")
     const [guests, setGuests] = useState("")
     const [occasion, setOccasion] = useState("")
-
-    // const handleDate = (e) => {
-    //     setDate(e.target.value);
-    // }
 
     const handleGuests = (e) => {
         setGuests(e.target.value);
@@ -32,7 +27,9 @@ function BookingForm(props) {
 
             <label htmlFor="res-time">Choose time:</label>
             <select id="res-time" value={props.selectedTime} onChange = {props.handleSelectedTime}>
-                {props.availableTimes.map((time) => <option key={time.label} value={time.value}>{time.label}</option>)}
+            {props.availableTimes.map((time) => (
+                        <option key={time.label} value={time.value}>
+                            {time.label}</option>))}
             </select>
 
             <label htmlFor="guests">Number of guests</label>

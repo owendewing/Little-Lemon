@@ -3,7 +3,7 @@ import Homepage from "./Homepage.js";
 import { useReducer } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function initializeTimes() {
+export function initializeTimes() {
     return [
         {label: "17:00", value: "17:00"},
         {label: "18:00", value: "18:00"},
@@ -14,7 +14,7 @@ function initializeTimes() {
     ];
 }
 
-function updateTimes(state, action) {
+export function updateTimes(state, action) {
     switch (action.type) {
         case "UPDATE_TIMES":
             return state;
