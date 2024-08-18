@@ -55,24 +55,26 @@ function BookingForm(props) {
     return(
         <>
         <Nav></Nav>
-        <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
-            <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" onChange = {handleDate} value={date} required/>
+        <form onSubmit={handleSubmit}>
+            <div class = "bookingform-style">
+            <label className="bookingform-title" htmlFor="res-date">Choose date:</label>
+            <input className="bookingform-input" type="date" id="res-date" onChange = {handleDate} value={date} required/>
 
-            <label htmlFor="res-time">Choose time:</label>
-            <select id="res-time" required>
+            <label className="bookingform-title" htmlFor="res-time">Choose time:</label>
+            <select className="bookingform-input" id="res-time" required>
             {props.availableTimes.availableTimes.map((time, index) => (<option key={index} value={time}>{time}</option>))};
             </select>
 
-            <label htmlFor="guests">Number of guests</label>
-            <input type="number" placeholder="1" min="1" max="10" id="guests" value = {guests} onChange = {handleGuests} required/>
+            <label className="bookingform-title" htmlFor="guests">Number of guests:</label>
+            <input className="bookingform-input" type="number" placeholder="1" min="1" max="10" id="guests" value = {guests} onChange = {handleGuests} required/>
 
-            <label htmlFor="occasion">Occasion</label>
-            <select id="occasion" value={occasion} onChange = {handleOccasion} required>
+            <label className="bookingform-title" htmlFor="occasion">Occasion:</label>
+            <select className="bookingform-input" id="occasion" value={occasion} onChange = {handleOccasion} required>
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" onClick={handleSubmit} />
+            <input className="buttons" aria-label="On Click" type="submit" value="Make Your reservation"/>
+            </div>
         </form>
         </>
     );

@@ -10,6 +10,8 @@ function Hero() {
   return (
     <div className="hero-background">
       <div className="hero-content">
+      <img id="hero-image" src={require("./restaurantfood.jpg")} alt="Little-Lemon" />
+
         <h1 id="hero-title">Little Lemon</h1>
         <br />
         <h2 id="hero-location">Chicago</h2>

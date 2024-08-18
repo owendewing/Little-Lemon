@@ -3,7 +3,7 @@ import Footer from "./Footer.js";
 import Hero from "./Hero.js";
 import Highlights from "./Highlights.js";
 import Nav from './Nav.js';
-import Testimonials from './Testimonials.js';
+// import Testimonials from './Testimonials.js';
 
 function Homepage(){
     return(
@@ -12,7 +12,7 @@ function Homepage(){
         <Nav></Nav>
         <Hero></Hero>
         <Highlights></Highlights>
-        <Testimonials></Testimonials>
+        {/* <Testimonials></Testimonials> */}
         <Footer></Footer>
         </>
     )

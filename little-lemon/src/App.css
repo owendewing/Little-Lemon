@@ -58,8 +58,10 @@
 }
 
 .hero-content{
-  margin-left: 280px;
-  padding: 15px;
+  display:grid;
+  justify-content: center;
+  margin-left: -480px;
+  padding: 10px; 
 }
 
 #hero-title{
@@ -80,6 +82,15 @@
   font-size: 15px;
   word-spacing: 2px;
 }
+
+#hero-image{
+  justify-content: center;
+  position:relative;
+  /* margin-left:1000px; */
+  width: 150px;
+  height: 150px;
+}
+
 
 h1{
   font-family: 'Markazi', serif;
@@ -187,6 +198,31 @@ h2{
   color: #333333;
   justify-content: center;
   display: flex;
+}
+
+.bookingform-style{
+  margin-top:30px;
+  display: grid;
+  justify-content: center;
+  gap:30px;
+}
+
+.bookingform-title{
+  font-family: 'Karla', serif;
+  font-size: 30px;
+  justify-content: center;
+  color: #495E57;
+}
+
+.bookingform-input{
+  font-family: 'Karla', serif;
+  font-size: 20px;
+  color: #495E57;
+}
+
+#booking-confirmed{
+  display:flex;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {
