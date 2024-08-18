@@ -2,6 +2,10 @@ import Nav from "./Nav";
 import { useState } from "react";
 
 function BookingForm(props) {
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      props.submitForm(e);
+    };
     const [date, setDate] = useState("")
     const [guests, setGuests] = useState("")
     const [occasion, setOccasion] = useState("")
@@ -23,7 +27,7 @@ function BookingForm(props) {
     return(
         <>
         <Nav></Nav>
-        <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
+        <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }} onSubmit={handleSubmit}>
             <label htmlFor="res-date">Choose date</label>
             <input type="date" id="res-date" onChange = {handleDate} value={date}/>
 
@@ -40,7 +44,7 @@ function BookingForm(props) {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input type="submit" value="Make Your reservation" />
+            <input type="submit" value="Make Your reservation" onClick={handleSubmit} />
         </form>
         </>
     );
