@@ -2,30 +2,16 @@ import BookingPage from "./BookingPage.js";
 import Homepage from "./Homepage.js";
 import { useReducer } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { fetchAPI } from "./Api.js";
 
-export function initializeTimes() {
-    return [
-        {label: "17:00", value: "17:00"},
-        {label: "18:00", value: "18:00"},
-        {label: "19:00", value: "19:00"},
-        {label: "20:00", value: "20:00"},
-        {label: "21:00", value: "21:00"},
-        {label: "22:00", value: "22:00"},
-    ];
+function updateTimes(state, date) {
+    return {availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]};
 }
 
-export function updateTimes(state, action) {
-    switch (action.type) {
-        case "UPDATE_TIMES":
-            return state;
-        default:
-            return state;
-    }
-
-}
 
 function Main() {
-    const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes(), initializeTimes);
+    const initialState = {availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]}
+    const [state, dispatch] = useReducer(updateTimes, initialState);
 
   return (
     <main>
@@ -34,7 +20,7 @@ function Main() {
           <Route path="/" element={<Homepage />} />
           <Route path="/booking"
           element={<BookingPage
-            availableTimes={availableTimes}
+            availableTimes={state}
             dispatch = {dispatch}
             />}
             />

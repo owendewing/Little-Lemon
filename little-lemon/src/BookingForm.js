@@ -2,11 +2,7 @@ import Nav from "./Nav";
 import { useState } from "react";
 
 function BookingForm(props) {
-
-    const handleDateChange = (e) => {
-        const selectedDate = e.target.value;
-        props.dispatch({type: "UPDATE_TIMES", date: selectedDate});
-    }
+    const [date, setDate] = useState("")
     const [guests, setGuests] = useState("")
     const [occasion, setOccasion] = useState("")
 
@@ -18,18 +14,20 @@ function BookingForm(props) {
         setOccasion(e.target.value);
     }
 
+    const handleDate = (e) => {
+        setDate(e.target.value);
+    }
+
     return(
         <>
         <Nav></Nav>
         <form style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}>
             <label htmlFor="res-date">Choose date</label>
-            <input type="date" id="res-date" onChange = {handleDateChange}/>
+            <input type="date" id="res-date" onChange = {handleDate} value={date}/>
 
             <label htmlFor="res-time">Choose time:</label>
-            <select id="res-time" value={props.selectedTime} onChange = {props.handleSelectedTime}>
-            {props.availableTimes.map((time) => (
-                        <option key={time.label} value={time.value}>
-                            {time.label}</option>))}
+            <select id="res-time">
+            {props.availableTimes.availableTimes.map((time, index) => (<option key={index} value={time}>{time}</option>))};
             </select>
 
             <label htmlFor="guests">Number of guests</label>
