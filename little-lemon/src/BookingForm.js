@@ -15,7 +15,9 @@ function BookingForm(props) {
     }
 
     const handleDate = (e) => {
-        setDate(e.target.value);
+        const selectedDate = e.target.value;
+        setDate(selectedDate);
+        props.dispatch(selectedDate)
     }
 
     return(

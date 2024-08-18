@@ -3,14 +3,14 @@ import Homepage from "./Homepage.js";
 import { useReducer } from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { fetchAPI } from "./Api.js";
+import ConfirmedBooking from "./ConfirmedBooking.js";
 
 function updateTimes(state, date) {
-    return {availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]};
+    return {availableTimes: fetchAPI(new Date(date))};
 }
 
-
 function Main() {
-    const initialState = {availableTimes: ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]}
+    const initialState = {availableTimes: fetchAPI(new Date())}
     const [state, dispatch] = useReducer(updateTimes, initialState);
 
   return (
@@ -24,6 +24,7 @@ function Main() {
             dispatch = {dispatch}
             />}
             />
+            <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
       </Router>
     </main>
