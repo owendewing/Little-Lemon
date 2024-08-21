@@ -32,36 +32,39 @@
   margin-top:15px;
   display: flex;
   justify-content: center;
-  gap: 100px;
-  /* padding: 30px; */
+  gap: 300px;
 }
 
 #logo{
   display:flex;
-  width: 170px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
 }
 
 .list{
   font-family: 'Karla', sans-serif;
   font-weight: bold;
   margin-top: 13px;
+  font-size: 20px;
   display:flex;
   list-style-type: none;
   font-style: bold;
-  gap:20px;
+  gap:60px;
 }
 
 .hero-background{
+  display: flex;
   background-color: #495E57;
-  height:300px;
+  height:420px;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
 }
 
 .hero-content{
-  display:grid;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  margin-left: -480px;
-  padding: 10px; 
 }
 
 #hero-title{
@@ -79,70 +82,88 @@
   font-style: 'Karla', serif;
   font-weight: bold;
   margin-top: -35px;
-  font-size: 15px;
+  font-size: 20px;
   word-spacing: 2px;
 }
 
 #hero-image{
   justify-content: center;
-  position:relative;
-  /* margin-left:1000px; */
-  width: 150px;
-  height: 150px;
+  width: 240px;
+  height: 350px;
+  border-radius: 20px;
 }
 
 
 h1{
-  font-family: 'Markazi', serif;
+  font-family: 'Markazi Text', serif;
+  font-size: 50px;
 }
 
 h2{
-  font-family: 'Markazi', serif;
+  font-family: 'Markazi Text', serif;
+  font-size: 35px;
 }
 
 .buttons{
-  background-color:#F4CE14;
+  width: 200px;
+  height: 50px;
+  background-color: #F4CE14;
   border-radius: 10px;
-  margin-top: 15px;
-  padding: 12px;
-  font-style: 'Karla', serif;
+  border: none;
+  font-family: 'Karla', sans-serif;
   font-weight: bold;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
   cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.buttons:hover{
+  background-color: rgb(169, 144, 19);
+  color: #FFFFFF;
+  transition-duration: .5s;
+}
+
+.buttons:active{
+  background-color: rgb(255, 231, 108);
 }
 
 .highlights-background{
-  height:550px;
+  height:700px;
+  align-items: flex-start;
 }
 
 .highlights-content{
   display: flex;
   justify-content: center;
-  gap: 380px;
+  gap: 450px;
+}
+
+#highlights-button{
+  margin-top:40px;
 }
 
 .column-image{
   display:inline;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 150px;
-  height: 150px;
-  /* padding: 10px; */
+  width: 250px;
+  height: 250px;
 }
 
 .highlights-specials {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .highlights-column {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background-color: #EDEFEE;
-  margin-top: 50px;
+  margin-top: 20px;
   flex: 1;
-  max-width: 250px;
+  max-width: 350px;
   text-align: center;
 }
 
@@ -155,7 +176,7 @@ h2{
 }
 
 .highlights-text {
-  font-size: 15px;
+  font-size: 25px;
   margin: 10px 0;
 }
 
@@ -169,7 +190,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 90px;
 }
 
 .highlights-description {
@@ -180,12 +201,22 @@ h2{
 
 .delivery-button {
   margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px 20px;
-  background-color: #f39c12;
+  background-color: #EE9972;
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+}
+
+.delivery-button:hover{
+  background-color: #976249;
+  transition-duration: .5s;
+}
+
+.delivery-button:active{
+  background-color: #fec5ab;
 }
 
 .testimonials-background{
@@ -220,10 +251,105 @@ h2{
   color: #495E57;
 }
 
+#bookingform-confirmation{
+  display: flex;
+  margin-top:10px;
+  margin-left: 28px;
+}
+
 #booking-confirmed{
   display:flex;
   justify-content: center;
 }
+
+.footer{
+  height:350px;
+  background-color:#495E57;
+}
+
+.footer-background{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-list-container{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-list{
+  color: #FFFFFF;
+  display: flex;
+  text-align:start;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+#footer-title{
+  font-weight: bold;
+}
+
+#footer-image{
+  width: 100px;
+  height: 158px;
+  margin-top:45px;
+  margin-left:25px;
+}
+
+.footer-image-container {
+  flex: 0 0 auto;
+}
+
+.footer-social-media-container{
+  display: flex;
+  justify-content: center;
+  margin-right: 110px;
+}
+
+.footer-social-media-list{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  color:#FFFFFF;
+}
+
+.footer-contact-information-container{
+  display:flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.footer-contact-information-list{
+  display: flex;
+  flex-direction: column;
+  color:#FFFFFF;
+  list-style: none;
+}
+
+#footer-copyright{
+  color:#FFFFFF;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.navbar a,
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a:hover,
+.footer a:hover {
+  color: #F4CE14;
+  transition-duration: .3s;
+}
+
 
 @keyframes App-logo-spin {
   from {

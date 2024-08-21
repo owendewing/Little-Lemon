@@ -73,7 +73,7 @@ function BookingForm(props) {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input className="buttons" aria-label="On Click" type="submit" value="Make Your reservation"/>
+            <input className="buttons" id="bookingform-confirmation" aria-label="On Click" type="submit" value="Make Your reservation"/>
             </div>
         </form>
         </>

@@ -3,7 +3,7 @@ function Highlights() {
         <div className="highlights-background">
             <div className="highlights-content">
                 <h1 id="highlights-title">This Weeks Specials!</h1>
-                <button className="buttons">Online Menu</button>
+                <button className="buttons" id="highlights-button">Online Menu</button>
             </div>
             <div className="highlights-specials">
                 <div className="highlights-column">

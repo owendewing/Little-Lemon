@@ -6,11 +6,11 @@ function Nav() {
       <img src={require("./little-lemon-logo.png")} alt="Little Lemon logo" id="logo" />
       <ul className="list">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/menu">Menu</Link></li>
-        <li><Link to="/reservations">Reservations</Link></li>
-        <li><Link to="/order">Order Online</Link></li>
-        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/">About</Link></li>
+        <li><Link to="/">Menu</Link></li>
+        <li><Link to="/">Reservations</Link></li>
+        <li><Link to="/">Order Online</Link></li>
+        <li><Link to="/">Login</Link></li>
       </ul>
     </nav>
   );
