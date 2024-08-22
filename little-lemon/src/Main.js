@@ -30,6 +30,7 @@ function Main() {
 }
 
 function BookingPageWithNavigate({ state, dispatch }) {
+    console.log(state.availableTimes);
     const navigate = useNavigate();
     function submitForm(formData) {
         if (submitAPI(formData)) {

@@ -52,11 +52,12 @@ function BookingForm(props) {
             props.dispatch(selectedDate)
         }
     }
+    console.log(props.availableTimes);
     return(
         <>
         <Nav></Nav>
         <form onSubmit={handleSubmit}>
-            <div class = "bookingform-style">
+            <div className = "bookingform-style">
             <label className="bookingform-title" htmlFor="res-date">Choose date:</label>
             <input className="bookingform-input" type="date" id="res-date" onChange = {handleDate} value={date} required/>
 
