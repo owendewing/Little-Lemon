@@ -1,5 +1,5 @@
 import BookingPage from "./BookingPage.js";
-import Homepage from "./HomePage.js";
+import HomePage from "./HomePage.js";
 import { useReducer } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import { fetchAPI, submitAPI } from "./Api.js";
@@ -17,7 +17,7 @@ function Main() {
         <main>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Homepage />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route
                         path="/booking"
                         element={<BookingPageWithNavigate state={state} dispatch={dispatch} />}
