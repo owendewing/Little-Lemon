@@ -4,4 +4,14 @@ This project was the capstone for the Meta Front-End Development Certification. 
 
 # How to Run
 
-To run this project, first clone the repository and open the terminal or any code editor of preference and cd into the repository. Once in the repository, type "npm start" to run the project. If you get an error, type "npm install" to install any necessary dependencies needed, then try "npm start" again. 
+1. To run this project, first clone the repository to your local machine through the terminal:
+   ```git clone <repository-url>```
+2. Next, navigate to the repository in the terminal or in your desired IDE:
+   ```cd <repository-directory>```
+3. Make sure all dependencies are installed by running:
+   ```npm install```
+4. To run the project, type:
+   ```npm start```
+5. If you have any errors, try installing the dependencies again and re-run it.
+6. Once the project is running, open a browser and type:
+   ```http://localhost:3000```
